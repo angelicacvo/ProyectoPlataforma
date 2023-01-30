@@ -1,4 +1,7 @@
-img {
-    border-radius: 50%;
-    height: 200px;
+:root {
+    --header-footer-color: #3B2A1D;
+    --body-color: #ddd0c2;
+    --header-footer-letter: #E4E2E5;
+    --secondary-color: #542B1D;
+    --body-letter: #333133;
 }
