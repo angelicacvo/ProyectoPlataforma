@@ -3,3 +3,10 @@ img {
     height: 200px;
 }
 
+:root {
+    --header-footer-color: #354F52;
+    --body-color: #84A98C;
+    --header-footer-letter: #CAD2C5;
+    --secondary-color: #52796f;
+    --body-letters: #2F3E46;
+}
