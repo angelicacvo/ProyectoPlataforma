@@ -1,0 +1,45 @@
+
+.nav-bar {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: var(--header-footer-color);
+    color: var(--header-footer-letter);
+    font-family: var(--main-font-family);
+    flex-wrap: nowrap;
+    padding-bottom: 10px;
+}
+
+.nav-pills{
+    display: flex;
+    align-content: center;
+}
+
+.nav-link.active,
+.show > .nav-link {
+    background-color: var(--header-footer-color) ;
+}
+
+.nav-link:hover{
+    background-color: var(--secondary-color);
+}
+
+
+.logo {
+    padding-right: 20px;
+    border-radius: 50%;
+    height: 100px;
+}
+
+.btn-secondary {
+    margin-left: 15px;
+    background-color: var(--secondary-button-background);
+    border: none;
+}
+
+.btn-secondary:hover{
+    background-color: var(--secondary-color);
+}
+
+
