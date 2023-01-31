@@ -1,3 +1,59 @@
-.redes{
+footer{
+   
+    background:var(--header-footer-color);
+    color: var(--header-footer-letter);
+    font-family: var(--main-font-family);
+    --main-font-size: 16px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.logotipo {
+    border-radius: 50%;
+    height: 150px;
+    
+}
+
+.info{
+    display: flex;
+    margin-right: 30%;
+    
+}
+
+.lista-info {
     list-style: none;
+    text-align: justify;
+    text-decoration: none;
+}
+
+.lista-info a {
+    list-style: none;
+    text-align: justify;
+    text-decoration: none;
+    color: var(--header-footer-letter);
+}
+
+
+
+.lista-redes {
+    list-style: none;
+    text-align: justify;
+   margin-left: 60px;
+   
+    
+}
+.lista-redes a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--header-footer-letter);
+}
+
+.derechos{
+    font-size: 10px;
+    text-align: center;
+    
 }

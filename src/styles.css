@@ -1,7 +1,6 @@
-img {
-    border-radius: 50%;
-    height: 200px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
 
 :root {
     --header-footer-color: #354F52;
@@ -9,4 +8,6 @@ img {
     --header-footer-letter: #CAD2C5;
     --secondary-color: #52796f;
     --body-letters: #2F3E46;
+    --main-font-family: 'Roboto', sans-serif;
+    --main-font-size: 16px;
 }
