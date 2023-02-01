@@ -1,0 +1,57 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px minmax(150px, 1200px);
+    grid-template-rows: 500px 900px;
+    margin-left: 0px;
+}
+
+.grid-item-1{
+    grid-column-start: 1;
+    grid-column-end: 2 ;
+    font-family: var(--main-font-family);
+    background-color: var(--header-footer-color);
+    color: var(--header-footer-letter);
+    overflow: hidden;
+    margin-left: 0px;
+}
+
+.grid-item-2{
+    grid-column-start: 2;
+    grid-column-end: 3 ;
+    background-image: url("../../../assets/img/yoga-section.jpg");
+    background-size: 100%;
+    object-fit: contain;
+
+
+}
+
+
+
+.grid-item-3{
+    border: 5px solid blueviolet;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#sidebar-container{
+    display: block;
+    
+}
+
+.title{
+    padding: 20px 1rem 30px 2rem;
+
+}
+
+.btn-secondary{
+    background: none;
+    border: none;
+    padding-bottom: 20px;
+    align-content: center;
+}
+
+.input-group {
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
