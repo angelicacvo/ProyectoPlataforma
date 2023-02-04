@@ -1,8 +1,9 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 250px minmax(150px, 1200px);
-    grid-template-rows: 500px 900px;
+    grid-template-columns: 250px minmax(150px, 1fr);
+    grid-template-rows: 500px 600px 980px 800px;
     margin-left: 0px;
+    background-color: var(--body-color);
 }
 
 .grid-item-1{
@@ -10,27 +11,10 @@
     grid-column-end: 2 ;
     font-family: var(--main-font-family);
     background-color: var(--header-footer-color);
+    background-repeat: no-repeat;
     color: var(--header-footer-letter);
     overflow: hidden;
     margin-left: 0px;
-}
-
-.grid-item-2{
-    grid-column-start: 2;
-    grid-column-end: 3 ;
-    background-image: url("../../../assets/img/yoga-section.jpg");
-    background-size: 100%;
-    object-fit: contain;
-
-
-}
-
-
-
-.grid-item-3{
-    border: 5px solid blueviolet;
-    grid-column-start: 1;
-    grid-column-end: 3;
 }
 
 #sidebar-container{
@@ -54,4 +38,126 @@
     padding-left: 30px;
     padding-right: 20px;
 }
+
+.grid-item-2{
+    grid-column-start: 2;
+    grid-column-end: 4 ;
+    background-image: url("../../../assets/img/yoga-section.jpg");
+    background-size: 100%;
+    object-fit: contain;
+}
+
+.introduction{
+    display: grid;
+    justify-content: center;
+
+}
+
+.introduction h2, 
+p {
+    text-align: center;
+}
+
+h2, h5{ 
+    text-align: center;
+}
+
+.grid-item-3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 3%;
+    margin-right: 5% ;
+    margin-left: 5%;
+}
+
+.content-container-2{
+    display: grid;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* falta centrar los elementos y ajustar el texto al contenedor */
+}
+
+.card{
+    background-color: var(--header-footer-letter);
+    height: 400px;
+
+}
+
+.card-body{
+    overflow: hidden;
+}
+
+.video iframe{
+    object-fit: fill;
+}
+
+.carousel-control-prev, 
+.carousel-control-next  {
+    position:absolute;
+    width: 5%;
+    color: var(--header-footer-color);
+}
+
+.grid-item-4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 2%;
+    margin-right: 5% ;
+    margin-left: 5%;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+.grid-item-5 {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 2%;
+    margin-right: 5% ;
+    margin-left: 5%;
+}
+
+.content-container-3 .card{
+    width: 100%;
+    height: 200px;
+}
+
+.grid-subitem-2 {
+    padding-left: 30px;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-size: 100%;
+    background-image: url(../../../assets/img/form-background.jpg) ;
+    color: var(--header-footer-letter);
+}
+
+.schedule-appointment.col-md-4, 
+.schedule-appointment .col-md-6 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.col-12 {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+
+
+
+
+
+
 

@@ -1,4 +1,10 @@
 
+.grid-container{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4 ;
+}
+
 .nav-bar {
     display: flex;
     align-content: center;
