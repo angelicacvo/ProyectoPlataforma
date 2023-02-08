@@ -1,0 +1,72 @@
+<body>
+  <form class="formulario-registro">
+    <h2>Registro</h2>
+    <p>Por favor llene los campos requeridos</p>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Nombre</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        required
+      />
+    </div>
+    <label for="start" id="date-label">Fecha de nacimiento</label>
+
+    <input
+      type="date"
+      id="start"
+      name="trip-start"
+      value="2018-07-22"
+      min="1960-01-01"
+      max="2023-02-16"
+      required
+    />
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Correo</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        required
+      />
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+      <input
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label"
+        >Confirmar contraseña</label
+      >
+      <input
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+        required
+      />
+    </div>
+    <div class="mb-3 form-check">
+      <input
+        type="checkbox"
+        class="form-check-input"
+        id="exampleCheck1"
+        required
+      />
+
+      <label class="form-check-label" for="exampleCheck1"
+        >Acepto los términos y condiciones de la página</label
+      >
+    </div>
+    <button type="submit" class="btn btn-success">Registrar</button>
+  </form>
+</body>

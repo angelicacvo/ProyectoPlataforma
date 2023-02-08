@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
+import { RegisterComponent } from './body/register/register.component';
+
+import { ServicesComponent } from './body/services/services.component';
+import { HomeClientComponent } from './body/home-client/home-client.component';
 
 @NgModule({
   declarations: [
@@ -13,12 +17,12 @@ import { BodyComponent } from './body/body.component';
     HeaderComponent,
     FooterComponent,
     BodyComponent,
+    RegisterComponent,
+    ServicesComponent,
+    HomeClientComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

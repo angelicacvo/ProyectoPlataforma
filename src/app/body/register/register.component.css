@@ -1,0 +1,42 @@
+body{
+  background:var(--body-color) ;
+padding: 20px 0;
+}
+
+.formulario-registro{
+  background-image: url(https://img.freepik.com/foto-gratis/vista-posterior-mujer-haciendo-yoga-al-aire-libre_23-2148769551.jpg?w=996&t=st=1675296945~exp=1675297545~hmac=3149d6619bd7c439f53785fd4a1633d0d6e1872110cef9385bf3e8806ed0b6d7);
+background-size: cover;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px;
+  border-radius: 15px;
+opacity: 0.8 ;
+background-repeat: no-repeat;
+}
+
+
+
+#start{
+  
+  border: none;
+  padding: 6px 40px;
+  border-radius: 0.375rem;
+  margin: 8px;
+}
+.form-control{
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+
+} 
+
+.form-check-label {
+  color: white;
+}
+
+

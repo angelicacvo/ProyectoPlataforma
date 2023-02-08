@@ -1,5 +1,8 @@
 footer{
    
+   left: 0px;
+   bottom: 0px;
+   width: 100%;
     background:var(--header-footer-color);
     color: var(--header-footer-letter);
     font-family: var(--main-font-family);
@@ -15,12 +18,14 @@ footer{
 .logotipo {
     border-radius: 50%;
     height: 150px;
+    margin-top: 20px;
     
 }
 
 .info{
     display: flex;
     margin-right: 30%;
+    margin-top: 20px;
     
 }
 
@@ -55,5 +60,7 @@ footer{
 .derechos{
     font-size: 10px;
     text-align: center;
+    padding: 1rem;
+    margin-bottom: 0;
     
 }
