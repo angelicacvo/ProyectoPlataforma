@@ -1,0 +1,35 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr auto;
+    background-color: var(--body-color);
+}
+
+.grid-item-1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.plans-header{
+    background-image: url(../../../assets/img/plans-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+h1 {
+    color: var(--body-letters);
+    display: grid;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+
+.courses-header{
+    background-image: url(../../../assets/img/courses.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
