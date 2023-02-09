@@ -1,0 +1,124 @@
+body {
+  background: var(--body-color);
+}
+.titulo {
+  padding-top: 30px;
+  text-align: center;
+  color: var(--body-letters);
+}
+
+.titulo p {
+  margin-bottom: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  font-family: var(--main-font-family);
+  font-size: 25px;
+
+  padding: 60px 60px;
+}
+
+.caja-recursos {
+  background-image: url(https://bmeditores.mx/wp-content/uploads/2021/12/Suelos-saludables-Corteva-Agriscience-1068x534.jpg);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin: 0;
+}
+
+.caja-recursos:hover {
+  opacity: 0.8;
+  box-shadow: -5px -5px 17px -1px #2b2e30;
+  font-size: 35px;
+  transition: 0.5s;
+}
+
+.caja-eventos {
+  background-image: url(https://wp.es.aleteia.org/wp-content/uploads/sites/7/2019/01/web3-social-events-food-advice-health-weight-problems-shutterstock_438050224-rawpixel.com-ai.jpg?w=640&crop=1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+
+.caja-eventos:hover {
+  opacity: 0.8;
+  box-shadow: -5px -5px 17px -1px #2b2e30;
+  font-size: 35px;
+  transition: 0.5s;
+}
+
+.caja-asesorias {
+  background-image: url(https://clinicaimar.com/wp-content/uploads/2020/07/Nutricion-2048x1367.jpeg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+
+.caja-asesorias:hover {
+  opacity: 0.8;
+  box-shadow: 9px -4px 17px -1px #2b2e30;
+  font-size: 35px;
+  transition: 0.5s;
+}
+
+.caja-clases {
+  background-image: url(https://media.glamour.mx/photos/6190685b2d97bd4c522a5c4f/master/w_1600,c_limit/225884.jpg);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+.caja-clases:hover {
+  opacity: 0.8;
+  box-shadow: -6px 14px 17px -1px #2b2e30;
+  font-size: 35px;
+  transition: 0.5s;
+}
+
+.caja-nutricion {
+  background-image: url(https://www.portafolio.co/files/article_multimedia/uploads/2023/01/19/63ca15dff08d3.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  grid-column: 2/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caja-nutricion:hover {
+  opacity: 0.8;
+  box-shadow: 14px 10px 17px -1px #2b2e30;
+  font-size: 35px;
+  transition: 0.5s;
+}
+
+.texto-cajas {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border: none;
+  backdrop-filter: blur(10px);
+  width: 50%;
+}

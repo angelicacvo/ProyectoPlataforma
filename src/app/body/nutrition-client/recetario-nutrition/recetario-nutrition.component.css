@@ -1,0 +1,120 @@
+.recetario-container {
+    background: var(--body-color);
+  }
+  .recetario-title {
+    padding-top: 30px;
+    text-align: center;
+    color: var(--body-letters);
+  }
+    
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    font-family: var(--main-font-family);
+    font-size: 25px;
+  
+    padding: 60px 60px;
+  }
+  
+  .beakfast-container {
+    background-image: url(https://www.objetivobienestar.com/uploads/s1/21/56/54/2/15-desayunos-saludables-que-se-preparan-en-10-minutos.webp);
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    margin: 0;
+  }
+  
+  .beakfast-container:hover {
+    opacity: 0.8;
+    box-shadow: -5px -5px 17px -1px #2b2e30;
+    font-size: 35px;
+    transition: 0.5s;
+  }
+  
+  .desserts-container {
+    background-image: url(https://vidaskool.com/wp-content/uploads/2021/09/ideas-de-postres-saludables-scaled.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+  }
+  
+  .desserts-container:hover {
+    opacity: 0.8;
+    box-shadow: -5px -5px 17px -1px #2b2e30;
+    font-size: 35px;
+    transition: 0.5s;
+  }
+  
+  .bowls-container {
+    background-image: url(https://www.hogarmania.com/archivos/201809/buddha-bowl-668x400x80xX.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+  }
+  
+  .bowls-container:hover {
+    opacity: 0.8;
+    box-shadow: 9px -4px 17px -1px #2b2e30;
+    font-size: 35px;
+    transition: 0.5s;
+  }
+  
+  .lunch-container {
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/buddha-bowl-with-avocado-egg-chickpeas-tomato-royalty-free-image-1666125561.jpg?crop=1.00xw:0.752xh;0,0.188xh&resize=640:*);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+  }
+  .lunch-container:hover {
+    opacity: 0.8;
+    box-shadow: -6px 14px 17px -1px #2b2e30;
+    font-size: 35px;
+    transition: 0.5s;
+  }
+  
+  .meals-container {
+    background-image: url(https://img.taste.com.au/aNiKLfG8/taste/2020/04/low-cal-chicken-mushroom-one-pot-160880-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    grid-column: 2/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .meals-container:hover {
+    opacity: 0.8;
+    box-shadow: 14px 10px 17px -1px #2b2e30;
+    font-size: 35px;
+    transition: 0.5s;
+  }
+  
+  .container-text {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border: none;
+    backdrop-filter: blur(10px);
+    width: 50%;
+  }

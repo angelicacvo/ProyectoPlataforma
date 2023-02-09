@@ -1,0 +1,56 @@
+.recipees-container{
+    display: grid;
+    margin-top: 3%;
+    margin-right: 5% ;
+    margin-left: 5%;
+}
+
+#content-container-1,
+#content-container-2{
+    display: grid;
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-bottom: 2%;
+    background-color: var(--secondary-color);
+    /* falta centrar los elementos y ajustar el texto al contenedor */
+}
+
+h2, p, .subtitle {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+
+.carousel{
+    display: grid;
+}
+
+.card{
+    background-color: var(--header-footer-letter);
+    height: 400px;
+}
+
+.vermas {
+    background: none;
+    border: none;
+    padding-bottom: 20px;
+    color: var(--secondary-button-background);
+    align-content: center;
+}
+
+.card-body{
+    overflow: hidden;
+}
+
+.video iframe{
+    object-fit: fill;
+}
+
+.carousel-control-prev, 
+.carousel-control-next  {
+    position:absolute;
+    width: 5%;
+    color: var(--header-footer-color);
+}
