@@ -15,6 +15,7 @@ import { ServicesComponent } from './body/services/services.component';
 import { HomeClientComponent } from './body/home-client/home-client.component';
 import { HomeaboutusComponent } from './body/homeaboutus/homeaboutus.component';
 import { EcommerceComponent } from './body/ecommerce/ecommerce.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { EcommerceComponent } from './body/ecommerce/ecommerce.component';
     HomeClientComponent,
     HomeaboutusComponent,
     RecetasNutritionComponent,
-    EcommerceComponent
+    EcommerceComponent,
+    PageNotFoundComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
