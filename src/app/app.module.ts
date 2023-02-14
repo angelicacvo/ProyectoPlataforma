@@ -13,7 +13,7 @@ import { ContactNutritionComponent } from './body/nutrition-client/contact-nutri
 import { RegisterComponent } from './body/register/register.component';
 import { ServicesComponent } from './body/services/services.component';
 import { HomeClientComponent } from './body/home-client/home-client.component';
-import { HomeaboutusComponent } from './body/homeaboutus/homeaboutus.component';
+// import { HomeaboutusComponent } from './body/homeaboutus/homeaboutus.component';
 import { EcommerceComponent } from './body/ecommerce/ecommerce.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
@@ -31,7 +31,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     RegisterComponent,
     ServicesComponent,
     HomeClientComponent,
-    HomeaboutusComponent,
+    // HomeaboutusComponent,
     RecetasNutritionComponent,
     EcommerceComponent,
     PageNotFoundComponent
