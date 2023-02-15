@@ -39,6 +39,7 @@
 .grid-item-3{
     grid-column-start: 1;
     grid-column-end: 4;
+    padding-bottom: 5%;
 }
 
 
@@ -62,5 +63,10 @@ h2{
 
 .card-img, .card-img-bottom, .card-img-top{
     width: 90%;
+}
+
+.btn  {
+    background-color: var(--secondary-button-background);
+    border: none;
 }
 

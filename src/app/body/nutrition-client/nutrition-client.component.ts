@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-nutrition-client',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./nutrition-client.component.css']
 })
 export class NutritionClientComponent {
+  option!: number;
+  @Output() componentOption: number = 0;
 
+  activateComponent() {
+    this.option = this.componentOption;
+  }
 }

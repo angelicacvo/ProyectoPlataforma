@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Plans } from 'src/app/models/plans.model';
-import { Product } from 'src/app/models/products.model';
 import { SubProducts } from 'src/app/models/subProducts.model';
 
 
@@ -9,7 +8,7 @@ import { SubProducts } from 'src/app/models/subProducts.model';
   templateUrl: './ecommerce.component.html',
   styleUrls: ['./ecommerce.component.css'],
 })
-export class EcommerceComponent {
+export class EcommerceComponent implements OnInit {
    cart : SubProducts[] = [{
     name: '',
     price: 0,

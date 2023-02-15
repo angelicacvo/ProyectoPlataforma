@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-contact-nutrition',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-nutrition.component.css']
 })
 export class ContactNutritionComponent {
-
+  @Output() option: number = 2;
 }

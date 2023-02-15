@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-recetas-nutrition',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./recetas-nutrition.component.css']
 })
 export class RecetasNutritionComponent {
-
+  @Output() option: number = 1;
 }

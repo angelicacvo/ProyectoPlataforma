@@ -39,7 +39,6 @@ iframe {
 .introduction{
     display: grid;
     justify-content: center;
-
 }
 
 .introduction h2, 
@@ -69,8 +68,7 @@ h2, h5{
 
 .card{
     background-color: var(--header-footer-letter);
-    height: 400px;
-
+    height: 100%;
 }
 
 .card-body{
@@ -114,6 +112,10 @@ h2, h5{
     height: 200px;
 }
 
+.grid-subitem-1 {
+    height: auto;
+}
+
 .grid-subitem-2 {
     padding-left: 30px;
 }
@@ -140,6 +142,15 @@ form {
     padding-top: 40px;
     padding-bottom: 60px;
 }
+
+@media screen and (max-width: 767px) {
+    .grid-subitem-1 .card-body {
+        height: 0;
+        width: 0;
+    }
+
+}
+
 
 
 

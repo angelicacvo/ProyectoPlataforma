@@ -12,6 +12,7 @@
     padding-top: 2%;
     padding-left: 8%;
     padding-right: 8%;
+    padding-bottom: 5%;
     margin-bottom: 2%;
     background-color: var(--secondary-color);
     /* falta centrar los elementos y ajustar el texto al contenedor */
@@ -53,4 +54,9 @@ h2, p, .subtitle {
     position:absolute;
     width: 5%;
     color: var(--header-footer-color);
+}
+
+.btn  {
+    background-color: var(--secondary-button-background);
+    border: none;
 }

@@ -54,13 +54,13 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Recetario</a>
+                    <a class="nav-link active" aria-current="page" type="button" (click)="activateComponent()" >Recetario</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Recetas</a>
+                    <a class="nav-link active" aria-current="page" type="button" (click)="activateComponent()">Recetas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Contactar a un experto</a>
+                    <a class="nav-link active" aria-current="page" type="button" (click)="activateComponent()">Contactar a un experto</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -73,8 +73,10 @@
             </div>
           </nav>
     </div>
-    <div class="grid-item-3">
-      <app-recetas-nutrition></app-recetas-nutrition>
+    <div class="grid-item-3" [ngSwitch]="option" >
+      <app-recetario-nutrition *ngSwitchDefault="option === 0"></app-recetario-nutrition>
+      <app-recetas-nutrition *ngSwitchCase="option === 1" ></app-recetas-nutrition>
+      <app-contact-nutrition *ngSwitchCase="option === 2" ></app-contact-nutrition>
     </div>
     <div class="grid-item-4">
         <div class="saved">
