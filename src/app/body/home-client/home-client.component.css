@@ -1,15 +1,353 @@
-header {
-  height: 20%;
-  width: 100%;
+body {
+  background-color: var(--body-color);
+  font-family: var(--main-font-family);
 }
 
-.container {
+header {
+  height: 300px;
+  background-image: url(https://imagenes.20minutos.es/files/image_980_553/uploads/imagenes/2021/06/18/caminar-10-000-pasos-diarios-y-exponerse-una-media-de-20-minutos-diarios-al-sol-es-esencial-para-un-buen-estado-fisico-y-mental.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header hr {
+  margin: 0;
+  padding: 0px 25px;
+}
+
+.container-header {
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 80% 20%;
+  margin: 0;
+  padding: 0;
+}
+
+.foto-usuario {
+  width: 45%;
+  height: 35%;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.perfil p {
+  color: white;
+}
+
+.editar-usuario {
+  background: none;
+  border-radius: 15px;
+  width: 45%;
+  font-weight: bolder;
+}
+
+.editar-usuario:hover {
+  opacity: 0.5;
+}
+
+nav {
+  background: var(--header-footer-letter);
+  display: flex;
+  justify-content: space-around;
+}
+
+nav button {
+  background: var(--header-footer-letter);
+  border: none;
+  padding: 10px 5px;
+  margin-left: 10px;
+}
+
+nav button:hover {
+  background: gainsboro;
+  opacity: 0.7;
 }
 
 .titulo {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+}
+
+.titulo h1 {
+  backdrop-filter: blur(10px);
+}
+
+.primera-seccion {
+  display: grid;
+  grid-template-columns: 25% 60%;
+  grid-template-rows: auto auto auto;
+  justify-content: space-around;
+  padding: 65px 0px;
+}
+
+.titulo-plan {
+  padding: 15px 8px;
+  text-align: center;
+}
+
+.info-plan {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(176, 201, 180, 1) 33%
+  );
+  text-align: center;
+  padding: 55px 15px;
+  border-radius: 15px;
+}
+
+.cursos-ingresados h3 {
+  width: 45%;
+  padding: 10px 0px;
+}
+
+.cursos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  font-family: var(--main-font-family);
+  font-size: 25px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(176, 201, 180, 1) 33%
+  );
+  padding: 60px 60px;
+  border-radius: 15px;
+}
+
+.caja-1 {
+  background-image: url(https://static3.abc.es/media/bienestar/2020/03/04/yoga-beneficios-tipos-kBIB--620x349@abc.jpg);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin: 0;
+}
+
+.caja-1:hover {
+  opacity: 0.8;
+  box-shadow: -5px -5px 17px -1px #2b2e30;
+  font-size: 35px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.caja-2 {
+  background-image: url(https://cdn.hsnstore.com/blog/wp-content/uploads/2020/04/ES-NUTRICION-1.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.caja-2:hover {
+  opacity: 0.8;
+  box-shadow: -5px -5px 17px -1px #2b2e30;
+  font-size: 35px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.caja-3 {
+  background-image: url(https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small__webp/public/articulos/tipos-meditacion_jpg.webp);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+
+.caja-3:hover {
+  opacity: 0.8;
+  box-shadow: 9px -4px 17px -1px #2b2e30;
+  font-size: 35px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.caja-4 {
+  background-image: url(https://www.fundacioncadah.org/j289eghfd7511986_uploads/0%20Mindfulness.jpg);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+.caja-4:hover {
+  opacity: 0.8;
+  box-shadow: -6px 14px 17px -1px #2b2e30;
+  font-size: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.caja-5 {
+  background-image: url(https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/aPThzg6rR0T93DLPivBtLdY-JRs=/fit-in/1200x1200/smart/arc-anglerfish-arc2-prod-corprensa.s3.amazonaws.com/public/5LUV2KEXSVBA3KADMK6LEP5ZWY.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caja-5:hover {
+  opacity: 0.8;
+  box-shadow: 14px 10px 17px -1px #2b2e30;
+  font-size: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.caja-6 {
+  background-image: url(https://elenafrancis.com/wp-content/uploads/EL-ARTE-DE-CONECTAR-CCN-UNO-MISMO.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caja-6:hover {
+  opacity: 0.8;
+  box-shadow: 14px 10px 17px -1px #2b2e30;
+  font-size: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.texto-cajas {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border: none;
+  backdrop-filter: blur(10px);
+  width: 50%;
+}
+
+.boton-cursos {
+  background: var(--secondary-color);
+  margin: 10px 0px;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.boton-cursos:hover {
+  opacity: 0.8;
+}
+
+.titulo-segunda-seccion {
+  text-align: center;
+}
+
+.container-segunda-seccion {
+  display: grid;
+  grid-template-columns: 20% 60%;
+  justify-content: space-around;
+  padding: 55px 0;
+}
+
+.titulo-segunda-seccion h2 {
+  margin: 0px;
+  padding: 25px 0;
+}
+
+.calendario {
+  text-align: center;
+  width: 350px;
+
+  padding-bottom: 0;
+  height: 61%;
+  border-radius: 7px;
+}
+
+.calendario h1 {
+  background: var(--header-footer-letter);
+  margin: 0;
+}
+
+.calendario ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0;
+}
+
+.primer-dia {
+  grid-column-start: 5;
+  border: 1px solid black;
+}
+
+.primer-dia:hover {
+  background: var(--header-footer-letter);
+}
+
+.dias {
+  text-align: right;
+  border: 1px solid black;
+}
+
+.dias:hover {
+  background: var(--header-footer-letter);
+}
+
+.nombre-dia {
+  background: #eee;
+  font-weight: bold;
+  text-align: center;
+}
+
+.eventos {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(176, 201, 180, 1) 33%
+  );
+  border-radius: 15px;
+}
+
+.eventos-container {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 55px;
+  font-weight: bold;
+}
+
+.container-tercera-seccion {
+  background: var(--header-footer-letter);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 55px 0;
 }

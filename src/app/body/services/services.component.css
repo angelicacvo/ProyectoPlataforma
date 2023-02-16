@@ -1,5 +1,6 @@
 body {
   background: var(--body-color);
+  font-family: var(--main-font-family);
 }
 .titulo {
   padding-top: 30px;
@@ -18,7 +19,7 @@ body {
   font-family: var(--main-font-family);
   font-size: 25px;
 
-  padding: 60px 60px;
+  padding: 40px 60px;
 }
 
 .caja-recursos {
@@ -39,6 +40,7 @@ body {
   box-shadow: -5px -5px 17px -1px #2b2e30;
   font-size: 35px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .caja-eventos {
@@ -57,6 +59,7 @@ body {
   box-shadow: -5px -5px 17px -1px #2b2e30;
   font-size: 35px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .caja-asesorias {
@@ -75,6 +78,7 @@ body {
   box-shadow: 9px -4px 17px -1px #2b2e30;
   font-size: 35px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .caja-clases {
@@ -91,8 +95,9 @@ body {
 .caja-clases:hover {
   opacity: 0.8;
   box-shadow: -6px 14px 17px -1px #2b2e30;
-  font-size: 35px;
+  font-size: 30px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .caja-nutricion {
@@ -110,8 +115,9 @@ body {
 .caja-nutricion:hover {
   opacity: 0.8;
   box-shadow: 14px 10px 17px -1px #2b2e30;
-  font-size: 35px;
+  font-size: 30px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .texto-cajas {
@@ -121,4 +127,22 @@ body {
   border: none;
   backdrop-filter: blur(10px);
   width: 50%;
+}
+
+.modal-content {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(176, 201, 180, 1) 33%
+  );
+  font-family: var(--main-font-family);
+  text-align: justify;
+}
+
+.btn {
+  background: var(--secondary-button-background);
+}
+
+.btn:hover {
+  opacity: 0.8;
 }

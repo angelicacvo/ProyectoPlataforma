@@ -9,6 +9,7 @@ import { RegisterComponent } from './body/register/register.component';
 import { ServicesComponent } from './body/services/services.component';
 import { HomeClientComponent } from './body/home-client/home-client.component';
 import { HomeaboutusComponent } from './body/homeaboutus/homeaboutus.component';
+import { CoursesClientComponent } from './body/courses-client/courses-client.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HomeaboutusComponent } from './body/homeaboutus/homeaboutus.component';
     ServicesComponent,
     HomeClientComponent,
     HomeaboutusComponent,
+    CoursesClientComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

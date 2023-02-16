@@ -1,66 +1,65 @@
-footer{
-   
-   left: 0px;
-   bottom: 0px;
-   width: 100%;
-    background:var(--header-footer-color);
-    color: var(--header-footer-letter);
-    font-family: var(--main-font-family);
-    --main-font-size: 16px;
+footer {
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background: var(--header-footer-color);
+  color: var(--header-footer-letter);
+  font-family: var(--main-font-family);
+  --main-font-size: 16px;
 }
 
-.container{
-    display: flex;
-    justify-content: space-around;
-    
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: var(--header-title-family);
 }
 
 .logotipo {
-    border-radius: 50%;
-    height: 150px;
-    margin-top: 20px;
-    
+  border-radius: 50%;
+  height: 150px;
+  margin-top: 20px;
 }
 
-.info{
-    display: flex;
-    margin-right: 30%;
-    margin-top: 20px;
-    
+.info {
+  display: flex;
+  margin-right: 30%;
+  margin-top: 20px;
 }
 
 .lista-info {
-    list-style: none;
-    text-align: justify;
-    text-decoration: none;
+  list-style: none;
+  text-align: justify;
+  text-decoration: none;
 }
 
 .lista-info a {
-    list-style: none;
-    text-align: justify;
-    text-decoration: none;
-    color: var(--header-footer-letter);
+  list-style: none;
+  text-align: justify;
+  text-decoration: none;
+  color: var(--header-footer-letter);
 }
-
-
 
 .lista-redes {
-    list-style: none;
-    text-align: justify;
-   margin-left: 60px;
-   
-    
+  list-style: none;
+  text-align: justify;
+  margin-left: 60px;
 }
 .lista-redes a {
-    list-style: none;
-    text-decoration: none;
-    color: var(--header-footer-letter);
+  list-style: none;
+  text-decoration: none;
+  color: var(--header-footer-letter);
 }
 
-.derechos{
-    font-size: 10px;
-    text-align: center;
-    padding: 1rem;
-    margin-bottom: 0;
-    
+.derechos {
+  font-size: 10px;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0;
 }

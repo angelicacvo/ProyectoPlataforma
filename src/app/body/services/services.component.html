@@ -7,20 +7,211 @@
     </p>
   </div>
   <div class="container">
-    <div class="caja-recursos">
+    <div
+      class="caja-recursos"
+      data-bs-toggle="modal"
+      data-bs-target="#modalRecursos"
+    >
       <p class="texto-cajas">Recursos</p>
     </div>
-    <div class="caja-eventos">
+    <div
+      class="caja-eventos"
+      data-bs-toggle="modal"
+      data-bs-target="#modalEventos"
+    >
       <p class="texto-cajas">Eventos</p>
     </div>
-    <div class="caja-asesorias">
+    <div
+      class="caja-asesorias"
+      data-bs-toggle="modal"
+      data-bs-target="#modalAsesorias"
+    >
       <p class="texto-cajas">Asesorías</p>
     </div>
-    <div class="caja-clases">
+    <div class="caja-clases" data-bs-toggle="modal" data-bs-target="#modalYoga">
       <p class="texto-cajas">Clases de yoga</p>
     </div>
-    <div class="caja-nutricion">
+    <div
+      class="caja-nutricion"
+      data-bs-toggle="modal"
+      data-bs-target="#modalNutricion"
+    >
       <p class="texto-cajas">Nutrición saludable</p>
+    </div>
+  </div>
+
+  <!--Modal content-->
+  <div
+    class="modal fade"
+    id="modalRecursos"
+    tabindex="-1"
+    *ngFor="let d of servicesDataModal"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-tittle">{{ d.tituloRecursos }}</h2>
+          <button class="close" data-bs-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            {{ d.textRecursos }}
+          </p>
+          <ul>
+            <br />
+            <li>
+              {{ d.liR1 }}
+            </li>
+            <br />
+            <li>
+              {{ d.liR2 }}
+            </li>
+            <br />
+            <li>
+              {{ d.liR3 }}
+            </li>
+            <br />
+            <li>
+              {{ d.liR4 }}
+            </li>
+            <br />
+            <li>{{ d.liR5 }}</li>
+            <br />
+            <li>
+              {{ d.liR6 }}
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="modalEventos"
+    tabindex="-1"
+    *ngFor="let d of servicesDataModal"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-tittle">{{ d.tituloEventos }}</h2>
+          <button class="close" data-bs-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            {{ d.textEventos }}
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="modalAsesorias"
+    tabindex="-1"
+    *ngFor="let d of servicesDataModal"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-tittle">{{ d.tituloAsesorias }}</h2>
+          <button class="close" data-bs-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            {{ d.textAsesorias }}
+          </p>
+          <ul>
+            <li>{{ d.liA1 }}</li>
+            <br />
+            <li>{{ d.liA2 }}</li>
+            <br />
+            <li>{{ d.liA3 }}</li>
+            <br />
+            <li>{{ d.liA4 }}</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="modalYoga"
+    tabindex="-1"
+    *ngFor="let d of servicesDataModal"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-tittle">{{ d.tituloYoga }}</h2>
+          <button class="close" data-bs-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            {{ d.textYoga }}
+          </p>
+          <p>{{ d.p2Yoga }}</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="modalNutricion"
+    tabindex="-1"
+    *ngFor="let d of servicesDataModal"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-tittle">{{ d.tituloNutricion }}</h2>
+          <button class="close" data-bs-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            {{ d.textNutricion }}
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </body>

@@ -1,13 +1,191 @@
 <body>
   <header>
-    <div class="container">
+    <div class="container-header">
       <div class="titulo"><h1>Mi perfil</h1></div>
 
-      <div class="perfil">
-        <img class="foto-usuario" src="" alt="" />
-        <p>Nombre de usuario</p>
-        <button class="editar-usuario">Editar usuario</button>
+      <div class="perfil" *ngFor="let e of elementosHome">
+        <img src="{{ e.imagen }}" alt="Imagen usuario" class="foto-usuario" />
+        <p>{{ e.nombre }}</p>
+        <button class="editar-usuario">Editar perfil</button>
       </div>
     </div>
+
+    <nav>
+      <div class="nav-botones">
+        <button>Mis cursos</button>
+        <button>Eventos</button>
+        <button>Preferencias</button>
+        <button>Conoce más</button>
+      </div>
+      <div class="nav-search">
+        <input type="text" placeholder="Search" />
+        <button>Search</button>
+      </div>
+    </nav>
+    <hr />
   </header>
+  <section class="primera-seccion">
+    <div class="plan-actual">
+      <h2 class="titulo-plan">Mi plan actual</h2>
+      <div class="info-plan" *ngFor="let d of elementosHome">
+        <h4>{{ d.tituloPlan }}</h4>
+        <h3>{{ d.precioPlan }}</h3>
+        <p>
+          {{ d.contenidoPlan }}
+        </p>
+        <p>{{ d.contenidoPlan2 }}</p>
+      </div>
+    </div>
+
+    <div class="cursos-ingresados">
+      <h3>Cursos a los que has ingresado</h3>
+      <div class="cursos">
+        <div class="caja-1">
+          <p class="texto-cajas">Curso: yoga</p>
+        </div>
+        <div class="caja-2">
+          <p class="texto-cajas">Curso: nutrición</p>
+        </div>
+        <div class="caja-3">
+          <p class="texto-cajas">Curso: meditación</p>
+        </div>
+        <div class="caja-4">
+          <p class="texto-cajas">Curso: principios del mindfulness</p>
+        </div>
+        <div class="caja-5">
+          <p class="texto-cajas">Curso: control de las emociones</p>
+        </div>
+        <div class="caja-6">
+          <p class="texto-cajas">Curso: conectar conmigo mismo</p>
+        </div>
+      </div>
+      <button class="boton-cursos">Ir a cursos en progreso</button>
+    </div>
+  </section>
+  <section class="arbol-recetas">
+    <div class="arbol-vida">
+      <h1>Mi árbol de la vida (progreso)</h1>
+      <button>Ir al árbol</button>
+    </div>
+    <div class="recetas-historias">
+      <h1>Recetas con historias</h1>
+      <button>Ir a recetas con historias</button>
+    </div>
+  </section>
+  <section class="segunda-seccion">
+    <div class="titulo-segunda-seccion">
+      <h2>Eventos</h2>
+      <hr />
+    </div>
+    <div class="container-segunda-seccion">
+      <div class="calendario">
+        <h1>Febrero 2023</h1>
+        <ol>
+          <li class="nombre-dia">Lun</li>
+          <li class="nombre-dia">Mar</li>
+          <li class="nombre-dia">Mié</li>
+          <li class="nombre-dia">Jue</li>
+          <li class="nombre-dia">Vie</li>
+          <li class="nombre-dia">Sáb</li>
+          <li class="nombre-dia">Dom</li>
+          <li class="primer-dia">1</li>
+          <li class="dias">2</li>
+          <li class="dias">3</li>
+          <li class="dias">4</li>
+          <li class="dias">5</li>
+          <li class="dias">6</li>
+          <li class="dias">7</li>
+          <li class="dias">8</li>
+          <li class="dias">9</li>
+          <li class="dias">10</li>
+          <li class="dias">11</li>
+          <li class="dias">12</li>
+          <li class="dias">13</li>
+          <li class="dias">14</li>
+          <li class="dias">15</li>
+          <li class="dias">16</li>
+          <li class="dias">17</li>
+          <li class="dias">18</li>
+          <li class="dias">19</li>
+          <li class="dias">20</li>
+          <li class="dias">21</li>
+          <li class="dias">22</li>
+          <li class="dias">23</li>
+          <li class="dias">24</li>
+          <li class="dias">25</li>
+          <li class="dias">26</li>
+          <li class="dias">27</li>
+          <li class="dias">28</li>
+          <li class="dias">29</li>
+          <li class="dias">30</li>
+          <li class="dias">31</li>
+        </ol>
+      </div>
+
+      <div class="eventos">
+        <div class="eventos-container">
+          <div class="evento-1">
+            <iframe
+              width="50%"
+              height="70%"
+              src="https://www.youtube.com/embed/_9agX3gY1jU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p class="evento-info">
+              Salud mental, la clase que nadie nos dió | Fernando Lemarroy |
+              TEDxTecdeMty
+            </p>
+          </div>
+          <hr />
+          <div class="evento-2">
+            <iframe
+              width="50%"
+              height="70%"
+              src="https://www.youtube.com/embed/m8tKgotOBrU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p class="evento-info">
+              Eventos Bancolombia | Retos 2023: Bienestar empresarial -
+              Self-management con Sylvia Ramírez
+            </p>
+          </div>
+          <hr />
+          <div class="evento-3">
+            <iframe
+              width="50%"
+              height="70%"
+              src="https://www.youtube.com/embed/5yevt1g7LFA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p class="evento-info">
+              ARMONIZATE AHORA - Wellness & Mindfulness en Eventos Corporativos
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="tercera-seccion">
+    <div class="container-tercera-seccion">
+      <h2>Más información sobre eventos</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/rjEjV-f4_10"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
 </body>

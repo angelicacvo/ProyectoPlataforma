@@ -1,0 +1,138 @@
+body {
+  background: var(--body-color);
+  font-family: var(--main-font-family);
+}
+
+.titulo-progreso {
+  text-align: center;
+  margin: 45px 0;
+
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://img.freepik.com/foto-gratis/hermoso-arbol-medio-campo-cubierto-hierba-linea-arboles-fondo_181624-29267.jpg?w=1060&t=st=1676421518~exp=1676422118~hmac=5a26fec07b046e63300c8951dd2eff2a06129c87d8dc72aa3237f8a575ef48ee);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.barra-usuario {
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  width: 70%;
+  margin: 15px;
+  color: white;
+}
+
+.seccion-progreso {
+  margin-top: 55px;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 15% 15% 15%;
+
+  justify-content: space-around;
+}
+
+.cursos-progreso {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(176, 201, 180, 1) 33%
+  );
+
+  padding: 12px 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0px -1px 5px 0px #000000;
+}
+
+.barra-curso {
+  background: gray;
+  border: none;
+  border-radius: 15px;
+  width: 60%;
+  height: 12px;
+  margin: 5px 0;
+}
+
+.barra-progreso-curso {
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 15px;
+  height: 12px;
+  width: 30%;
+}
+
+.boton-curso {
+  color: white;
+  background: var(--secondary-button-background);
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  height: 37px;
+}
+
+.boton-curso:hover {
+  opacity: 0.9;
+}
+
+.titulo-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30px;
+}
+
+.titulo-adquiridos {
+  backdrop-filter: blur(10px);
+  text-align: center;
+  margin: 45px 0;
+  color: white;
+}
+
+.seccion-adquiridos {
+  padding: 45px 0;
+  display: grid;
+  grid-template-columns: 15% 15% 15%;
+  justify-content: space-around;
+}
+
+.cursos-adquiridos {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(176, 201, 180, 1) 33%
+  );
+  padding: 12px 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0px -1px 5px 0px #000000;
+}
+
+.boton-curso-adquirido {
+  color: white;
+  background: var(--secondary-button-background);
+  border: none;
+  border-radius: 8px;
+  height: 37px;
+  margin-top: 10px;
+}
+
+.boton-curso-adquirido:hover {
+  opacity: 0.9;
+}
