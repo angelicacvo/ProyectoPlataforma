@@ -1,0 +1,26 @@
+.aboutus {
+    display: flex;
+}
+
+.section-second {
+    width: 50%;
+}
+
+.logo {
+    width: 50%;
+    border-radius: 20rem;
+}
+
+.img-logo {
+    width: 50%;
+    border: 1px solid red;
+    /* height: 100vh; */
+    text-align: center;
+    padding: 2.7rem 0;
+}
+
+main h1 {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
