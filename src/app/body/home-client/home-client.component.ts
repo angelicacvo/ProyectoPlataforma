@@ -13,7 +13,7 @@ export class HomeClientComponent {
       nombre: 'Nombre usuario',
 
       tituloPlan: 'White',
-      precioPlan: '$ 10.00',
+      precioPlan: 'COP300,000.00',
       contenidoPlan:
         'Contenido freemium recursos, clases y cursos comunicate con nuestros expertos.',
       contenidoPlan2:

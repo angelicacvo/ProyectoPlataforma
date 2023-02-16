@@ -12,20 +12,20 @@ import { ServicesComponent } from './body/services/services.component';
 import { YogaClientComponent } from './body/yoga-client/yoga-client.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: "login", component: LoginComponent},
-  {path: "aboutus", component: AboutusComponent},
-  {path: "yogaclient", component: YogaClientComponent},
-  {path: "nutritionclient", component: NutritionClientComponent},
-  {path: "ecommerce", component: EcommerceComponent},
-  {path: "homeclient", component: HomeClientComponent},
-  {path: "services", component: ServicesComponent},
-  {path: "register", component: RegisterComponent},
-  {path: "coursesclient", component: CoursesClientComponent},  
+  { path: '', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'aboutus', component: AboutusComponent },
+  { path: 'yogaclient', component: YogaClientComponent },
+  { path: 'nutritionclient', component: NutritionClientComponent },
+  { path: 'ecommerce', component: EcommerceComponent },
+  { path: 'homeclient', component: HomeClientComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'coursesclient', component: CoursesClientComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
