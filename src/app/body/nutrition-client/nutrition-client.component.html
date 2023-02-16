@@ -1,125 +1,197 @@
 <div class="grid-container">
-    <div class="grid-item-1">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../../assets/img/carousel1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Alimentacion saludable</h5>
-                    <p>Una alimentación saludable consiste en ingerir una variedad de alimentos<br> que te brinden los nutrientes que necesitas para mantenerte<br> sano, sentirte bien y tener energía.</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../../../assets/img/carousel2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Nutrición</h5>
-                    <p>Combinada con la actividad física y un peso saludable, la buena alimentación <br> es una forma excelente de ayudar a tu cuerpo a mantenerse fuerte y saludable.</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../../../assets/img/carousel3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Alimentación consciente</h5>
-                    <p>Consiste en dedicar atención plena a la hora de alimentarnos. Porque si comemos de <br> forma consciente, vamos a ser capaces de escuchar nuestras sensaciones, tanto físicas como mentales.</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../../../assets/img/carousel4.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Comer bien, sentirnos bien</h5>
-                    <p>Nutrir tu despensa con alimentos adecuados, mantener buenos hábitos y tener <br> una actitud óptima frente a la comida te ayudará a mejorar tu ánimo</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../../../assets/img/carousel5.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Beneficios de una dieta saludable</h5>
-                    <p>Además de llevar una dieta sana rica en verduras y alimentos integrales, entre otros <br> alimentos, practicar media hora de ejercicio moderado puede ayudarnos <br> a conseguir beneficios tanto a nivel físico como psicológico.</p>
-                  </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+  <div class="grid-item-1">
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="../../../assets/img/carousel1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Alimentacion saludable</h5>
+            <p>
+              Una alimentación saludable consiste en ingerir una variedad de
+              alimentos<br />
+              que te brinden los nutrientes que necesitas para mantenerte<br />
+              sano, sentirte bien y tener energía.
+            </p>
           </div>
+        </div>
+        <div class="carousel-item" *ngFor="let item of carouselImages">
+          <img src="{{ item.img }}" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>{{ item.title }}</h5>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="grid-item-2">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <div class="navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" type="button" (click)="activateComponent(0)" >Recetario</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" type="button" (click)="activateComponent(1)">Recetas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" type="button" (click)="activateComponent(2)">Contactar a un experto</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                  </svg></button>
-                </form>
+  </div>
+  <div class="grid-item-2">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                type="button"
+                (click)="activateComponent(0)"
+                >Recetario</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                type="button"
+                (click)="activateComponent(1)"
+                >Recetas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                type="button"
+                (click)="activateComponent(2)"
+                >Contactar a un experto</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="grid-item-3" [ngSwitch]="option">
+    <app-recetas-nutrition *ngSwitchCase="1"></app-recetas-nutrition>
+    <app-contact-nutrition *ngSwitchCase="2"></app-contact-nutrition>
+    <app-recetario-nutrition *ngSwitchDefault></app-recetario-nutrition>
+  </div>
+  <div class="grid-item-4">
+    <div class="saved">
+      <h2 class="title">Tu contenido guardado</h2>
+      <div class="saved-content">
+        <div class="row row-cols-1 row-cols-md-4 g-6">
+          <div class="col">
+            <div class="card">
+              <img
+                src="../../../assets/img/alimentacionConsciente.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Recetario</h5>
+                <p class="card-text">PDF: alimentación consciente</p>
               </div>
             </div>
-          </nav>
-    </div>
-    <div class="grid-item-3" [ngSwitch]="option" >
-      <app-recetas-nutrition *ngSwitchCase="1" ></app-recetas-nutrition>
-      <app-contact-nutrition *ngSwitchCase="2" ></app-contact-nutrition>
-      <app-recetario-nutrition *ngSwitchDefault></app-recetario-nutrition>
-    </div>
-    <div class="grid-item-4">
-        <div class="saved">
-            <h2 class="title">Tu contenido guardado</h2>
-            <div class="saved-content">
-                <div class="row row-cols-1 row-cols-md-4 g-6">
-                    <div class="col">
-                      <div class="card">
-                        <img src="../../../assets/img/alimentacionConsciente.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Recetario</h5>
-                          <p class="card-text">PDF: alimentación consciente</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <iframe width="100%" src="https://www.youtube.com/embed/9TOTwVlvc3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <div class="card-body">
-                          <h5 class="card-title">Recetas</h5>
-                          <p class="card-text"> <strong>tarta vegana de limón (postre vegano sin horno)</strong> <br> Aprende a realizar un postre sin horno, fácil, económico, saludable y vegano</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="../../../assets/img/dietaVegana.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Recetario</h5>
-                          <p class="card-text">PDF: recetario de iniciación a la alimentación vegana</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <iframe width="100%" src="https://www.youtube.com/embed/_SpIHhePKWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                          <div class="card-body">
-                            <h5 class="card-title">Receta</h5>
-                            <p class="card-text"><strong>Video: comidas veganas con mucha proteína</strong> <br>Aprende a cocinar a base de plantas y con alto contenido de proteína de manera sencilla y deliciosa</p>
-                          </div>
-                        </div>
-                      </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <iframe
+                width="100%"
+                src="https://www.youtube.com/embed/9TOTwVlvc3k"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Recetas</h5>
+                <p class="card-text">
+                  <strong
+                    >tarta vegana de limón (postre vegano sin horno)</strong
+                  >
+                  <br />
+                  Aprende a realizar un postre sin horno, fácil, económico,
+                  saludable y vegano
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="../../../assets/img/dietaVegana.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Recetario</h5>
+                <p class="card-text">
+                  PDF: recetario de iniciación a la alimentación vegana
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <iframe
+                width="100%"
+                src="https://www.youtube.com/embed/_SpIHhePKWg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Receta</h5>
+                <p class="card-text">
+                  <strong>Video: comidas veganas con mucha proteína</strong>
+                  <br />Aprende a cocinar a base de plantas y con alto contenido
+                  de proteína de manera sencilla y deliciosa
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
