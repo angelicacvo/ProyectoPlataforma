@@ -28,13 +28,9 @@
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-<<<<<<< HEAD
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.js"]
-=======
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
->>>>>>> 4263ed7019ac95c61cf635f5bc1da6e130bed198
           },
           "configurations": {
             "production": {
