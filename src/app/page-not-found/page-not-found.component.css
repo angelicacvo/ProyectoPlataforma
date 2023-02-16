@@ -1,0 +1,12 @@
+.notfound{
+    margin-left: 35%;
+    margin-top: 20%;
+}
+
+.btn{
+    background-color: var(--button-color);
+}
+  
+  .btn:hover{
+    background-color: var(--button-color-hover);
+  }

@@ -1,0 +1,160 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 0px;
+    background-color: var(--body-color);
+}
+
+iframe {
+    width: 100%;
+}
+
+.yoga-explanation{
+    margin-bottom: 25%;
+    padding-bottom: 10%;
+    height: 100%;
+}
+
+.btn-secondary{
+    background: var(--secondary-color);
+    border: none;
+    padding-bottom: 20px;
+    align-content: center;
+}
+
+.input-group {
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.grid-item-2{
+    grid-column-start: 1;
+    grid-column-end: 4 ;
+    background-image: url("../../../assets/img/yoga-section.jpg");
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.introduction{
+    display: grid;
+    justify-content: center;
+}
+
+.introduction h2, 
+p {
+    text-align: center;
+}
+
+h2, h5{ 
+    text-align: center;
+}
+
+.grid-item-3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 3%;
+    margin-right: 5% ;
+    margin-left: 5%;
+}
+
+.content-container-2{
+    display: grid;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* falta centrar los elementos y ajustar el texto al contenedor */
+}
+
+.card{
+    background-color: var(--header-footer-letter);
+    height: 100%;
+}
+
+.card-body{
+    overflow: hidden;
+}
+
+.video iframe{
+    object-fit: fill;
+}
+
+.carousel-control-prev, 
+.carousel-control-next  {
+    position:absolute;
+    width: 5%;
+    color: var(--header-footer-color);
+}
+
+.grid-item-4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 2%;
+    margin-right: 5% ;
+    margin-left: 5%;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+.grid-item-5 {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 5%;
+}
+
+.content-container-3 .card{
+    width: 100%;
+    height: 200px;
+}
+
+.grid-subitem-1 {
+    height: auto;
+}
+
+.grid-subitem-2 {
+    padding-left: 30px;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-size: 100%;
+    background-image: url(../../../assets/img/form-background.jpg) ;
+    color: var(--header-footer-letter);
+}
+
+.schedule-appointment.col-md-4, 
+.schedule-appointment .col-md-6 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.col-12 {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+    .grid-subitem-1 .card-body {
+        height: 0;
+        width: 0;
+    }
+}
+
+
+
+
+
+
+
+
+

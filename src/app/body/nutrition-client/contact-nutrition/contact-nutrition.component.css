@@ -1,0 +1,24 @@
+.schedule-appointment-nutrition{
+    color: var(--body-letters);
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-size: 100%;
+    background-image: url(../../../../assets/img/contactform-background.jpg);
+}
+
+.contact-title h2, p{
+    display: grid;
+    justify-content: center;
+}
+
+.col-12 {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}

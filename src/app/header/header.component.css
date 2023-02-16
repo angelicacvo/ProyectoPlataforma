@@ -20,6 +20,7 @@
   font-family: var(--main-font-family);
   flex-wrap: nowrap;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 .nav-pills {

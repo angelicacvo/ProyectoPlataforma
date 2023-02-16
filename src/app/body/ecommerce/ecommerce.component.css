@@ -1,0 +1,58 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    background-color: var(--body-color);
+}
+
+.cart-button, 
+.btn-secondary,
+.btn-primary
+ {
+    background-color: var(--secondary-button-background);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.cart-button {
+    margin-top: 5%;
+    position: fixed;
+}
+
+.modal-content{
+    border-radius: 1rem;
+}
+
+.modal-dialog, .modal-body{
+    background-color: var(--header-footer-letter);
+    color: var(--body-letters);
+}
+
+.list-group-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--cards-background);
+}
+
+.total, .modal-header {
+    background-image: url(https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?cs=srgb&dl=pexels-sohail-nachiti-807598.jpg&fm=jpg);
+    background-size: cover;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    padding: 2%;
+}
+
+h5 {
+    padding: 5%;
+}
+
+.btn-close {
+    background-color: white;
+}
