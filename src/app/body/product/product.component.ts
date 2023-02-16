@@ -169,7 +169,7 @@ export class ProductComponent {
     localStorage.setItem('cart', JSON.stringify(this.subProduct));
     setTimeout(() => {
       window.location.reload();
-      }, 1000);
+      }, 1);
   }
 
   onAddToCartPlanes(name: string, price: number, description: string) {
@@ -183,7 +183,7 @@ export class ProductComponent {
     localStorage.setItem('plansCart', JSON.stringify(this.planes));
     setTimeout(() => {
       window.location.reload();
-      }, 1000);
+      }, 1);
   }
 
 

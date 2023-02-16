@@ -24,16 +24,12 @@ export class EcommerceComponent implements OnInit {
   }]
 
    ngOnInit(): void {
-    // this.planes = (JSON.parse(localStorage.getItem('cartPlanes') || 'Toca tiparlo'))
     this.cart = (JSON.parse(localStorage.getItem('cart') || '[]'))
     this.planes = (JSON.parse(localStorage.getItem('plansCart') || '[]'))
     console.log(this.cart)
     console.log('planes', this.planes)
    }
 
-   showCart() {
-    
-   }
 
 
 }

@@ -20,6 +20,7 @@ import { ProductComponent } from './body/product/product.component';
 
 import { AboutusComponent } from './body/aboutus/aboutus.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './body/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { FormsModule } from '@angular/forms';
     PageNotFoundComponent,
     ProductComponent,
     AboutusComponent,
+    LoginComponent,
   ],
   imports: [BrowserModule, AppRoutingModule,
     FormsModule],

@@ -27,7 +27,7 @@ export class LoginComponent {
       setTimeout(() => {
         window.location.reload();
         }, 1);
-      this.route.navigate(['']);
+      this.route.navigate(['/homeclient']);
     } else {
       alert("Ingresaste datos incorrectos, por favor verifica")
     }

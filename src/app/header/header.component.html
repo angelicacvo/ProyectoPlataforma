@@ -10,22 +10,28 @@
     </div>
     <ul class="nav nav-pills">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active" aria-current="page" routerLink="">Inicio</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Cursos</a>
+            <a *ngIf="isLogged" class="nav-link active" aria-current="page" routerLink="/nutritionclient">Alimentación</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+            <a *ngIf="isLogged" class="nav-link active" aria-current="page" routerLink="/yogaclient">Yoga</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Planes</a>
+            <a *ngIf="isLogged" class="nav-link active" aria-current="page" routerLink="/ecommerce">Tienda</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Sobre nosotros</a>
+            <a *ngIf="isLogged" class="nav-link active" aria-current="page" routerLink="/homeclient">Perfil</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Contáctanos</a>
+            <a *ngIf="!isLogged" class="nav-link active" aria-current="page" routerLink="/services">Servicios</a>
+        </li>
+        <li class="nav-item">
+            <a *ngIf="!isLogged" class="nav-link active" aria-current="page" href="#">Sobre nosotros</a>
+        </li>
+        <li class="nav-item">
+            <a *ngIf="!isLogged" class="nav-link active" aria-current="page" href="#">Contáctanos</a>
         </li>
         <li class="nav-item">
             <a class="btn btn-secondary" aria-current="page" href="#">
@@ -38,10 +44,10 @@
         </li>
         <ng-container>
         <li *ngIf="!isLogged" class="nav-item">
-            <a  class="btn btn-secondary" aria-current="page" href="#">Registrarse</a>
+            <a  class="btn btn-secondary" aria-current="page" routerLink="/register">Registrarse</a>
         </li>
         <li *ngIf="!isLogged" class="nav-item">
-            <a class="btn btn-secondary" aria-current="page" href="#">Ingresar</a>
+            <a class="btn btn-secondary" aria-current="page" routerLink="/login">Ingresar</a>
         </li>
         <li *ngIf="isLogged" (click)="logout()" class="nav-item">
             <a class="btn btn-secondary" aria-current="page" href="#">Cerrar Sesión</a>
