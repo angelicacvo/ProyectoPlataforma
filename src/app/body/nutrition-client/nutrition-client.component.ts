@@ -9,7 +9,7 @@ export class NutritionClientComponent {
   option!: number;
   @Output() componentOption: number = 0;
 
-  activateComponent() {
-    this.option = this.componentOption;
+  activateComponent(optionNumber: number) {
+    this.option = optionNumber;
   }
 }

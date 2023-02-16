@@ -49,15 +49,16 @@
                   <div class="col">
                     <div class="card">
                       <iframe
-                        class="video"
-                        src="https://www.youtube.com/watch?v=qrjGikCl46g"
+                        src="https://www.youtube.com/embed/qrjGikCl46g"
                         title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen
                       ></iframe>
                       <div class="card-body">
-                        <h5 class="card-title">Yoga para conectar con el amor</h5>
+                        <h5 class="card-title">
+                          Yoga para conectar con el amor
+                        </h5>
                       </div>
                       <div class="card-footer">
                         <a href="#" class="btn btn-secondary">Seguir viendo</a>
@@ -236,14 +237,14 @@
           <div class="col" *ngFor="let instructor of instructores">
             <div class="card">
               <img
-                src="{{instructor.img}}"
+                src="{{ instructor.img }}"
                 class="card-img-top"
                 alt="Imagen instructor/a"
               />
               <div class="card-body">
-                <h5 class="card-title">{{instructor.name}}</h5>
+                <h5 class="card-title">{{ instructor.name }}</h5>
                 <p class="card-text">
-                  {{instructor.description}}
+                  {{ instructor.description }}
                 </p>
               </div>
               <div class="card-footer">
@@ -283,20 +284,20 @@
         <div class="title">
           <h2>TÉCNICAS</h2>
         </div>
-        <div class="card mb-3"  *ngFor="let tecnica of tecnicas">
+        <div class="card mb-3" *ngFor="let tecnica of tecnicas">
           <div class="row g-0">
             <div class="col-md-4">
               <img
-                src="{{tecnica.img}}"
+                src="{{ tecnica.img }}"
                 class="img-fluid rounded-start"
                 alt="HathaYoga"
               />
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">{{tecnica.name}}</h5>
+                <h5 class="card-title">{{ tecnica.name }}</h5>
                 <p class="card-text">
-                    {{tecnica.description}}
+                  {{ tecnica.description }}
                 </p>
               </div>
             </div>

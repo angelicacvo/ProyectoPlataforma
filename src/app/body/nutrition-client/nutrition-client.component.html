@@ -51,16 +51,16 @@
     <div class="grid-item-2">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" type="button" (click)="activateComponent()" >Recetario</a>
+                    <a class="nav-link active" aria-current="page" type="button" (click)="activateComponent(0)" >Recetario</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" type="button" (click)="activateComponent()">Recetas</a>
+                    <a class="nav-link active" aria-current="page" type="button" (click)="activateComponent(1)">Recetas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" type="button" (click)="activateComponent()">Contactar a un experto</a>
+                    <a class="nav-link active" aria-current="page" type="button" (click)="activateComponent(2)">Contactar a un experto</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -74,9 +74,9 @@
           </nav>
     </div>
     <div class="grid-item-3" [ngSwitch]="option" >
-      <app-recetario-nutrition *ngSwitchDefault="option === 0"></app-recetario-nutrition>
-      <app-recetas-nutrition *ngSwitchCase="option === 1" ></app-recetas-nutrition>
-      <app-contact-nutrition *ngSwitchCase="option === 2" ></app-contact-nutrition>
+      <app-recetas-nutrition *ngSwitchCase="1" ></app-recetas-nutrition>
+      <app-contact-nutrition *ngSwitchCase="2" ></app-contact-nutrition>
+      <app-recetario-nutrition *ngSwitchDefault></app-recetario-nutrition>
     </div>
     <div class="grid-item-4">
         <div class="saved">

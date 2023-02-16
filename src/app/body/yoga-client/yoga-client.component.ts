@@ -9,7 +9,6 @@ import { TecnicasYoga } from 'src/app/models/tecnicas.model';
 })
 export class YogaClientComponent {
 
-
   instructores: InstructoresYoga[] = [
     {
       img: 'https://cdnx.jumpseller.com/dhanayoga/image/3849894/7.jpg?1534117603',
