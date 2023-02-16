@@ -18,6 +18,8 @@ import { EcommerceComponent } from './body/ecommerce/ecommerce.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductComponent } from './body/product/product.component';
 
+import { AboutusComponent } from './body/aboutus/aboutus.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,8 +38,10 @@ import { ProductComponent } from './body/product/product.component';
     EcommerceComponent,
     PageNotFoundComponent,
     ProductComponent,
+    AboutusComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule,
+    FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
