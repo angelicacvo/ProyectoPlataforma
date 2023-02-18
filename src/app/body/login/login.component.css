@@ -6,9 +6,9 @@
     left: 0;
     right: 0;
     /* background-color: transparent; */
-    background-image: url("https://images.unsplash.com/photo-1610338732118-09d3b6fd030c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
-    background-size: cover;
     display: flex;
+    background-color: var(--cards-background);
+    color: var(--header-footer-letter)
 }
 
 .login {
@@ -17,20 +17,22 @@
     height: 50%;
     margin: auto;
     text-align: center;
-    background-color: white;
+    background-image: url("https://images.wallpaperscraft.com/image/single/forest_aerial_view_trees_145074_1920x1080.jpg");
+    background-size: cover;
     border-radius: 1rem;
-    box-shadow: 1rem 1rem 1rem grey;
 }
 
 .form-login {
     display: flex;
     flex-direction: column;
+    margin-bottom: 5%;
 }
 
 .form-login input {
     margin: 1rem auto;
     width: 40%;
     padding: 0.5rem;
+    border-width: 1px;
     border-radius: 1rem;
 }
 
@@ -45,6 +47,17 @@
     margin-top: 1.5rem;
 }
 
-.login a {
+a {
     text-decoration: none;
+    color: var(--secondary-button-background);
+}
+
+.buttonLogin{
+    background-color: var(--secondary-button-background);
+    color: var(--header-footer-letter)
+}
+
+h2 {
+    text-align: center;
+    padding-top: 2%;
 }

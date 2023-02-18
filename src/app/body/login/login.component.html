@@ -1,19 +1,21 @@
 <main>
 <div class="login-modal">
     <div class="login">
-        <div class="form-logins">
         <h2>Login</h2>
+        <div class="form-logins">
         <h3>Ingrese su usuario y su contraseña</h3>
         <form action="" class="form-login">
             <input type="text" name="username" id="username" placeholder="Usuario" [(ngModel)]="username">
             <input type="password" name="password" id="password" placeholder="Contraseña" [(ngModel)]="password">
-            <button class="buttonLogin" (click)="login()">Iniciar Sesión</button>
+            <button class="buttonLogin btn btn-secondary" (click)="login()">Iniciar Sesión</button>
         </form>
-        <div>
-            <a routerLink="#">¿Aún no te has registrado? Registrate aquí</a>
-        </div>
-        <div>
-            <a routerLink="#">¿Olvidaste tu contraseña?</a>
+        <div class="bottom-text">
+            <div>
+                <a routerLink="#">¿Aún no te has registrado? Registrate aquí</a>
+            </div>
+            <div>
+                <a routerLink="#">¿Olvidaste tu contraseña?</a>
+            </div>
         </div>
         </div>
     </div>

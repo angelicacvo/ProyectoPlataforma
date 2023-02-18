@@ -1,157 +1,154 @@
 main {
-    /* background-color: var(--body-color); */
-    /* width: 100%; */
-    /* background-position: center; */
-    /* background-size: 100% auto; */
-    /* background-repeat: no-repeat; */
-    /* height: 27rem; */
-    /* opacity: 70%; */
-    /* border: 1px solid red; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* text-align: center; */
-    
+  background-color: var(--body-color);
 }
 
-main h1 {
-    color: aliceblue;
-    padding: 1.5rem;
-    font-weight: bold;
+main #information h1 {
+  font-weight: bold;
+  color: var(--body-letters);
+  margin-top: 18%;
 }
 
 #information {
-    display: grid;
-    align-content: space-between;
-    background-image: url('https://images.unsplash.com/photo-1513221191397-544071c48f2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 27rem;
-    opacity: 0.7;
-    text-align: center;
+  display: grid;
+  align-content: space-between;
+  background-image: url("https://digitalyogaacademy.com/wp-content/uploads/2020/04/AdobeStock_217117031-scaled.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 27rem;
+  opacity: 0.7;
+  text-align: center;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    /* gap: 1rem; */
-}
-
-.buttons button {
-    width: 3.5%;
-    background-color: var(--body-color);
-}
-
-#information .buttonRead {
-    width: 10%;
-    margin: auto;
-    border-radius: 2rem;
+button {
+  width: 10%;
+  margin: auto;
+  background-color: var(--secondary-button-background);
+  margin-bottom: 5%;
 }
 
 .glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: var(--body-color);
-    background: white;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: var(--body-color);
+  background: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
 }
 
 .glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
 .glow-on-hover:active {
-    color: #000
+  color: #000;
 }
 
 .glow-on-hover:active:after {
-    background: transparent;
+  background: transparent;
 }
 
 .glow-on-hover:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: white;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
+
 .couch {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding-bottom: 5%;
 }
 
 .couch img {
-
-    width: 100%;
-    height: 20rem;
-    /* border-radius: 20rem; */
-    /* border: 1px solid red; */
+  width: 100%;
+  height: 20rem;
+  /* border-radius: 20rem; */
+  /* border: 1px solid red; */
 }
 
 .couch .card {
-    margin-top: 2rem;
-    box-shadow: 1rem 1rem 1rem grey;
-    padding-bottom: 1rem;
+  margin-top: 2rem;
+  box-shadow: 1rem 1rem 1rem grey;
+  padding-bottom: 1rem;
 }
 
 .couch .card:hover {
-    translate: 0 -1rem;
+  translate: 0 -1rem;
 }
 
 .couch button {
-    width: 50%;
-    margin: auto;
-    border-radius: 2rem;
+  width: 50%;
+  margin: auto;
+  border-radius: 2rem;
 }
 
 .couches .title {
-    text-align: center;
-    font-size: 2rem;
-    padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
 }
 
 .location {
-    padding: 2rem;
-    text-align: center;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--secondary-color);
 }
 
 .location .title {
-    text-align: center;
-    padding: 2rem;
+  text-align: center;
+  padding: 2rem;
 }
