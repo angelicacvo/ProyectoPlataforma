@@ -21,6 +21,8 @@ import { ProductComponent } from './body/product/product.component';
 import { AboutusComponent } from './body/aboutus/aboutus.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './body/login/login.component';
+import { RecetasHistoriasComponent } from './recetas-historias/recetas-historias.component';
+import { ArbolComponent } from './body/arbol/arbol.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,9 +43,10 @@ import { LoginComponent } from './body/login/login.component';
     ProductComponent,
     AboutusComponent,
     LoginComponent,
+    RecetasHistoriasComponent,
+    ArbolComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule,
-    FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

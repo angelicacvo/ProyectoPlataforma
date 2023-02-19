@@ -85,7 +85,8 @@ nav button:hover {
   grid-template-columns: 25% 60%;
   grid-template-rows: auto auto auto;
   justify-content: space-around;
-  padding: 65px 0px;
+  padding-top: 65px;
+  height: 550px;
 }
 
 .titulo-plan {
@@ -102,6 +103,7 @@ nav button:hover {
   text-align: center;
   padding: 55px 15px;
   border-radius: 15px;
+  box-shadow: 0px 0px 9px 0px #000000;
 }
 
 .cursos-ingresados h3 {
@@ -122,6 +124,7 @@ nav button:hover {
   );
   padding: 60px 60px;
   border-radius: 15px;
+  box-shadow: 0px 0px 9px 0px #000000;
 }
 
 .caja-1 {
@@ -261,6 +264,108 @@ nav button:hover {
 
 .boton-cursos:hover {
   opacity: 0.8;
+}
+
+.arbol-recetas {
+  margin-left: 20px;
+}
+
+.arbol-vida {
+  margin-left: 45px;
+  margin-bottom: 55px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.container-arbol {
+  background-image: url(https://www.fmpalihue.com/uploads/noticias/29-de-agosto-d-a-del-rbol.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  box-shadow: 0px 0px 9px 2px #000000;
+}
+
+.arbol-vida h3 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border: none;
+  backdrop-filter: blur(10px);
+  width: 50%;
+}
+
+.boton-arbol {
+  background: var(--secondary-color);
+  margin: 10px 0px;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+}
+
+.boton-arbol:hover {
+  opacity: 0.6;
+}
+
+.recetas-historias {
+  margin-left: 45px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.container-recetas {
+  background-image: url(https://elcorreodelsol.com/sites/default/files/remedios-herbales.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  box-shadow: 0px 0px 9px 2px #000000;
+}
+
+.container-recetas h3 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border: none;
+  backdrop-filter: blur(10px);
+  width: 50%;
+}
+
+.boton-recetas {
+  background: var(--secondary-color);
+  margin: 10px 0px;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.boton-recetas:hover {
+  opacity: 0.6;
 }
 
 .titulo-segunda-seccion {

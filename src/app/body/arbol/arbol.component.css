@@ -1,0 +1,75 @@
+main {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(176, 201, 180, 1) 33%
+  );
+  font-family: var(--main-font-family);
+}
+
+.container {
+  background-image: url(https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.info-arbol {
+  margin-top: 55px;
+  width: 50%;
+  color: white;
+}
+
+.info-arbol p {
+  font-weight: bold;
+  color: white;
+
+  backdrop-filter: blur(10px);
+}
+
+.arbol {
+  background-image: url(https://img.freepik.com/vector-premium/etapas-crecimiento-arbol-partir-semillas-regar-plantas-coleccion-arboles-pequeno-grande-arbol-verde-crecimiento-hojas-desarrollo-ciclo-economico_93083-519.jpg?w=1060);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 650px;
+  height: 370px;
+  border-radius: 12px;
+}
+
+.titulo {
+  margin-top: 25px;
+  color: white;
+  backdrop-filter: blur(10px);
+  width: 25%;
+}
+
+.arbol-actual {
+  background-image: url(https://thumbs.dreamstime.com/z/%C3%A1rbol-de-dibujos-animados-con-hojas-verdes-aisladas-en-fondo-blanco-195453616.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 170px;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+#barra-progreso {
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+.progreso-arbol h4 {
+  color: white;
+}
+
+.icono {
+  margin-top: 25px;
+  color: white;
+}
