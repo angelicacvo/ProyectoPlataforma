@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutusComponent } from './body/aboutus/aboutus.component';
 import { ArbolComponent } from './body/arbol/arbol.component';
+import { ContactanosComponent } from './body/contactanos/contactanos.component';
 import { CoursesClientComponent } from './body/courses-client/courses-client.component';
 import { EcommerceComponent } from './body/ecommerce/ecommerce.component';
 import { HomeClientComponent } from './body/home-client/home-client.component';
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'coursesclient', component: CoursesClientComponent },
   { path: 'arbol', component: ArbolComponent },
   { path: 'recetas', component: RecetasHistoriasComponent },
+  { path: 'contactanos', component: ContactanosComponent}
 ];
 
 @NgModule({

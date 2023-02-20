@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './body/login/login.component';
 import { RecetasHistoriasComponent } from './recetas-historias/recetas-historias.component';
 import { ArbolComponent } from './body/arbol/arbol.component';
+import { ContactanosComponent } from './body/contactanos/contactanos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,7 @@ import { ArbolComponent } from './body/arbol/arbol.component';
     LoginComponent,
     RecetasHistoriasComponent,
     ArbolComponent,
+    ContactanosComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
